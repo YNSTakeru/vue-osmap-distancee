@@ -24,9 +24,9 @@ export default {
       15
     );
 
-    mymap.map("map_container", {
-      preferCanvas: true,
-    });
+    // mymap.map("map_container", {
+    //  preferCanvas: true,
+    // });
 
     L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
       maxZoom: 30,
@@ -475,7 +475,7 @@ html,
 body,
 #app,
 #mapid {
-  height: 600px;
+  height: calc(100vh - 60pt);
 }
 body {
   margin: 0;
