@@ -76,8 +76,8 @@ export default {
     }
     mymap.on("click", onMarker2Click);
 
-    console.log(window.outerHeight);
-    document.getElementById("mapid").style.height = (window.outerHeight - 90) + "px";
+    console.log(window.innerHeight);
+    document.getElementById("mapid").style.height = (window.innerHeight - 90) + "px";
 
     // takeuchi
     L.polyline(
