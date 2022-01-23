@@ -22,14 +22,16 @@ export default {
   name: "App",
   components: {
     Map,
-  },
+  }
 };
 </script>
 
 <style>
 header {
   color: white;
+  font-weight: bold;
   height: 30px;
+  vertical-align: middle;
   background-color: #13acc2;
 }
 
