@@ -33,13 +33,8 @@ export default {
       mymap
     );
     marker
-      .bindPopup("<p>西高野街道と竹内街道</p><p>スタート地点です</p>")
+      .bindPopup("<p>popup1</p><p>地図表示時に一緒に表示されます。</p>")
       .openPopup();
-
-    const kishuMarker = L.marker([34.59571613823718, 135.48537114791756]).addTo(
-      mymap
-    );
-    kishuMarker.bindPopup("<p>紀州街道</p><p>スタート地点です</p>").openPopup();
 
     // const marker2 = L.marker([34.57087119949882, 135.48662276687392]).addTo(
     //   mymap
