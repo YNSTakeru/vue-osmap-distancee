@@ -5,6 +5,7 @@
 <script>
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+// import restaurant from "@/json/restaurant.json";
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -22,6 +23,10 @@ export default {
       [34.510908722824276, 135.4812200449548],
       15
     );
+
+    mymap.map("map_container", {
+      preferCanvas: true,
+    });
 
     L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
       maxZoom: 30,
@@ -44,6 +49,22 @@ export default {
     // const marker2 = L.marker([34.57087119949882, 135.48662276687392]).addTo(
     //   mymap
     // );
+    // const restaurantNum = restaurant.elements.length;
+    // setInterval(() => {
+    //   for (let i = 0; i < 50; i++) {
+    //     const mkr = L.marker([
+    //       restaurant.elements[i].lat,
+    //       restaurant.elements[i].lon,
+    //     ]).addTo(mymap);
+
+    //     mkr
+    //       .bindPopup(
+    //         `<p>${restaurant.elements[i].tags.name}</p><p>レストラン</p>`
+    //       )
+    //       .closePopup();
+    //   }
+    // }, 5000);
+
     var popup = L.popup();
     function onMarker2Click(e) {
       popup
